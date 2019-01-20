@@ -5,10 +5,11 @@
 <button mat-ripple mat-raised-button (click)="logoutClicked()"  id="logoutBtn"
     color="accent">Logout</button><br>
 
-<div class="container">
+<div class="container" style="margin-left: 20%">
   <h2>Movies:</h2>
   <div *ngFor="let movie of movies;" (click)="movieClicked(movie)" class="movieClickable">
     <h4>{{movie.title}}</h4>
+    <img src="{{movie.image}}" style="height: 80px;width: 50px">
   </div>
   <button mat-ripple mat-raised-button (click)="addMovieClicked()" 
     color="accent">Add New</button>

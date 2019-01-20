@@ -1,6 +1,6 @@
 .container {
-    width: 50%;
-    float: left;
+    width: 20%;
+  align-content: center;
 }
 .movieClickable {
     cursor: pointer;

@@ -1,14 +1,17 @@
+<div style=";background: white;height: 110vh;margin-top: 1vh">
+  <mat-card></mat-card>
+<mat-card style="width: 20vw ;background: darkred;float: left">
 <h1> Login </h1>
-<form (ngSubmit)="onLogin()" [formGroup]="userLogin">
+<form (ngSubmit)="onLogin()" [formGroup]="userLogin" style="">
   <div class="form-group">
-    <mat-form-field class="example-full-width">
+    <mat-form-field >
         <input matInput placeholder="Username" formControlName="username" id="username">
         <mat-error *ngIf="userLogin.get('username').hasError('required')">
           Username is <strong>required</strong>
         </mat-error>
       </mat-form-field>
   <br>
-  <mat-form-field class="example-full-width">
+  <mat-form-field >
       <input matInput type="password" placeholder="Password" formControlName="password" id="password">
       <mat-error *ngIf="userLogin.get('password').hasError('required')">
         Password is <strong>required</strong>
@@ -22,3 +25,5 @@
 <mat-spinner *ngIf="loading"></mat-spinner>
 
 <a [routerLink]="['/register']">Don't have an accoount? Register here</a>
+</mat-card>
+</div>
