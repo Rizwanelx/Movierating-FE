@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "staging": "movieratingwebapp",
+    "default": "movieratingwebapp"
+  }
+}
